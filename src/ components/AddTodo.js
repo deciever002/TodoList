@@ -8,15 +8,20 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from 'react-router-dom';
 
 export default function AddTodo(){
+    //hooks
+    //hook to dispatch an action
     const dispatch = useDispatch();
+    //hook to navigate to any url
     const navigate = useNavigate();
     const [title,setTitle] = useState("");
 
+    //event handler to add todo to list of todos
     function handleAddTodo(){
         dispatch({
             type: ADD_TODO,
             payload: title
         });
+        //used react-toastify library to add toast notification in app
         toast('🦄 Todo Added!', {
             position: "top-right",
             autoClose: 5000,
@@ -28,6 +33,7 @@ export default function AddTodo(){
             theme: "light",
         });
         setTitle("");
+        //after adding todo navigate to list of todos
         setTimeout(() => {
             navigate('/list-todos');
         }, 1000);

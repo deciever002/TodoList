@@ -4,7 +4,7 @@ import logo from '../assets/images/logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAdd, faRectangleList } from '@fortawesome/free-solid-svg-icons';
 
-
+//Navbar component to render custom navbar
 export default function Navbar(){
     return (
         <>

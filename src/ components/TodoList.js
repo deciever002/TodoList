@@ -6,10 +6,14 @@ import { useDispatch, useSelector } from 'react-redux';
 import { DELETE_TODO, EDIT_TODO, SAVE_TODO, TOGGLE_TODO } from '../redux/actions/todoAction';
 
 export default function TodoList(){
+    //hooks
+    //hook to dispatch an action
     const dispatch = useDispatch();
+    //hook to get the state from store
     const todos = useSelector((state) => state.todos);
     let isLoading = useSelector((state) => state.loading);
 
+    //event handler to handle when user edit a todo
     function handleInputChange(e,index){
         dispatch({
             type:EDIT_TODO,
@@ -17,6 +21,7 @@ export default function TodoList(){
         })
     }
 
+    //event handler to delete a todo
     function deleteTodo(index){
         dispatch({
             type: DELETE_TODO,
@@ -24,6 +29,7 @@ export default function TodoList(){
         })
     }
 
+    //event handler to toggle the state of todo
     function toggleTodo(index){
         dispatch({
             type: TOGGLE_TODO,
@@ -31,6 +37,7 @@ export default function TodoList(){
         })
     }
 
+    //event handler to change the button and make input un disabled
     function editTodo(index,title,isEdit){
         if(isEdit){
             dispatch({

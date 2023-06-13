@@ -1,13 +1,13 @@
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { RouterProvider, createHashRouter } from 'react-router-dom';
 import Navbar from './ components/Navbar';
 import AddTodo from './ components/AddTodo';
 import TodoList from './ components/TodoList';
 import Home from './pages/Home';
 
 function App() {
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
-      path: '/TodoList',
+      path: '/',
       element: <Navbar />,
       children: [
         {
@@ -15,11 +15,11 @@ function App() {
           element: <Home />
         },
         {
-          path: "/TodoList/add-todo",
+          path: "/add-todo",
           element: <AddTodo />
         },
         {
-          path: "/TodoList/list-todos",
+          path: "/list-todos",
           element: <TodoList />
         }
       ]
