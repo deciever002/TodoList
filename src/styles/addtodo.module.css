@@ -1,0 +1,92 @@
+.container{
+    width: 100%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftContainer{
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.addTodoImg{
+    width: 100%;
+    height: 100%;
+}
+
+.addTodoHeading{
+    font-size: 3em;
+    color:white
+}
+
+.mainContainer{
+    width: 60%;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card{
+    border-radius: 1em;
+    height: 10%;
+    width: 90%;
+    background: linear-gradient(to right,rgb(239, 41, 239),purple);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+
+.btn{
+    min-width: 5em;
+    border: 1px solid white;
+    border-radius: 0.9em;
+    padding: 0.4em;
+    font-size: medium;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btnSuccess{
+    background: linear-gradient(to right,rgb(111, 229, 111),rgb(9, 122, 9));
+}
+
+.titleText,.bodyText{
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    color: black;
+    font-size: 1.5em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 1em;
+}
+
+.titleText:focus,.bodyText:focus{
+    outline: none;
+}
+
+.titleText::placeholder,.bodyText::placeholder{
+    color: rgb(49, 93, 240);
+}
+
+@media screen and (max-width:1000px){
+    .container{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width: 470px){
+    .leftContainer{
+        display: none;
+    }
+}
+
