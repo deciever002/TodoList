@@ -7,7 +7,7 @@ import Home from './pages/Home';
 function App() {
   const router = createBrowserRouter([
     {
-      path: '/',
+      path: '/TodoList',
       element: <Navbar />,
       children: [
         {
@@ -15,11 +15,11 @@ function App() {
           element: <Home />
         },
         {
-          path: "/add-todo",
+          path: "/TodoList/add-todo",
           element: <AddTodo />
         },
         {
-          path: "/list-todos",
+          path: "/TodoList/list-todos",
           element: <TodoList />
         }
       ]

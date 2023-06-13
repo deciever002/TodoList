@@ -1,7 +1,7 @@
 {
   "name": "todolist",
   "version": "0.1.0",
-  "homepage": "https://deciever002.github.io/TodoList/",
+  "homepage": "https://deciever002.github.io/TodoList",
   "private": false,
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
