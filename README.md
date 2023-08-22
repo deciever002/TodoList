@@ -6,10 +6,9 @@ Live at: https://deciever002.github.io/TodoList/
 
 Snapshots: 
 
-<img width="1440" alt="Screenshot 2023-08-22 at 12 26 25 PM" src="https://github.com/deciever002/TodoList/assets/112121338/eb54ff03-242d-47a3-86ff-c68638f48f88">
-<img width="1440" alt="Screenshot 2023-08-22 at 12 26 17 PM" src="https://github.com/deciever002/TodoList/assets/112121338/10960649-ab11-4071-8753-827c277ccce0">
 <img width="1440" alt="Screenshot 2023-08-22 at 12 26 08 PM" src="https://github.com/deciever002/TodoList/assets/112121338/c64b5775-85bc-4f33-87b9-134008761fd6">
-
+<img width="1440" alt="Screenshot 2023-08-22 at 12 26 17 PM" src="https://github.com/deciever002/TodoList/assets/112121338/10960649-ab11-4071-8753-827c277ccce0">
+<img width="1440" alt="Screenshot 2023-08-22 at 12 26 25 PM" src="https://github.com/deciever002/TodoList/assets/112121338/eb54ff03-242d-47a3-86ff-c68638f48f88">
 
 ## Table of Contents
 
@@ -51,10 +50,14 @@ The Simple ToDo List application is built using React, providing users with an i
 
 ## Getting Started
 
-1. Clone the repository using `git clone https://github.com/deciever002/TodoList`.
-2. Navigate to the project directory using `cd Todolist`.
-3. Install the dependencies with `npm install`.
-4. Start the application with `npm start`.
+1. Clone the repository using
+   ```git clone https://github.com/deciever002/TodoList```
+3. Navigate to the project directory using
+   ```cd Todolist```
+5. Install the dependencies with
+   ```npm install```
+7. Start the application with
+   ```npm start```
 
 ## Application Structure
 
