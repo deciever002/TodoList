@@ -51,13 +51,21 @@ The Simple ToDo List application is built using React, providing users with an i
 ## Getting Started
 
 1. Clone the repository using
-   ```git clone https://github.com/deciever002/TodoList```
+   ```
+      git clone https://github.com/deciever002/TodoList
+   ```
 3. Navigate to the project directory using
-   ```cd Todolist```
+   ```
+      cd Todolist
+   ```
 5. Install the dependencies with
-   ```npm install```
+   ```
+      npm install
+   ```
 7. Start the application with
-   ```npm start```
+   ```
+      npm start
+   ```
 
 ## Application Structure
 
